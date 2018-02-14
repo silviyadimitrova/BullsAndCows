@@ -1,0 +1,7 @@
+D:\BullsAndCows\BullsAndCows\bin\Debug\BullsAndCows.exe.config
+D:\BullsAndCows\BullsAndCows\bin\Debug\BullsAndCows.exe
+D:\BullsAndCows\BullsAndCows\bin\Debug\BullsAndCows.pdb
+D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.csprojResolveAssemblyReference.cache
+D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.csproj.CoreCompileInputs.cache
+D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.exe
+D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.pdb
