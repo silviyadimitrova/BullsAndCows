@@ -79,6 +79,7 @@ namespace BullsAndCows
 				Console.WriteLine(MessageCreator.MsgResult, result["bulls"], result["cows"]);
 				opponentPassedMoves.Add(opponentCurrMove);
 
+				//
 				myCurrMove = ChooseRandomNumber(optionsForKeyNumberOfTheOpponent);
 
 				optionsForKeyNumberOfTheOpponent.Remove(myCurrMove);
@@ -99,10 +100,10 @@ namespace BullsAndCows
 				{
 					Console.WriteLine(MessageCreator.MsgAskForCows);
 
-					while ((tryParseCows = int.TryParse(Console.ReadLine(), out cows)) == false || cows < 0 || cows > 4)
+					while ((tryParseCows = int.TryParse(Console.ReadLine(), out cows)) == false || cows < 0 || cows > 4 || bulls + cows > 4)
 						Console.WriteLine(MessageCreator.MsgInvalidNumberCowsBullsRestraint);
 
-					opponentKeyNumber = ProcessResultAndReducePossibleOptionsForKeyNumberOfOpponent(myCurrMove, bulls, cows, optionsForKeyNumberOfTheOpponent);
+					ReducePossibleOptionsForKeyNumberOfOpponent(myCurrMove, bulls, cows, optionsForKeyNumberOfTheOpponent);
 				}
 				else
 				{
@@ -151,13 +152,8 @@ namespace BullsAndCows
 			result["cows"] = cows;
 		}
 
-		private string ProcessResultAndReducePossibleOptionsForKeyNumberOfOpponent(string numberStr, int bullsResult, int cowsResult, List<string> optionsForKeyNumberOfTheOpponentToProcess)
+		private void ReducePossibleOptionsForKeyNumberOfOpponent(string numberStr, int bullsResult, int cowsResult, List<string> optionsForKeyNumberOfTheOpponentToProcess)
 		{
-			if (bullsResult == 4)
-			{
-				return numberStr;
-			}
-
 			int bulls = 0;
 			int cows = 0;
 
@@ -184,8 +180,6 @@ namespace BullsAndCows
 					i--;
 				}
 			}
-
-			return "";
 		}
 
 		private void Exit(params string[] message)
