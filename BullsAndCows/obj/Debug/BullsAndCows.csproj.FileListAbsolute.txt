@@ -5,3 +5,10 @@ D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.csprojResolveAssemblyReferen
 D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.csproj.CoreCompileInputs.cache
 D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.exe
 D:\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.pdb
+D:\Software Engineering\BullsAndCows\BullsAndCows\BullsAndCows\bin\Debug\BullsAndCows.exe.config
+D:\Software Engineering\BullsAndCows\BullsAndCows\BullsAndCows\bin\Debug\BullsAndCows.exe
+D:\Software Engineering\BullsAndCows\BullsAndCows\BullsAndCows\bin\Debug\BullsAndCows.pdb
+D:\Software Engineering\BullsAndCows\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.csprojResolveAssemblyReference.cache
+D:\Software Engineering\BullsAndCows\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.csproj.CoreCompileInputs.cache
+D:\Software Engineering\BullsAndCows\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.exe
+D:\Software Engineering\BullsAndCows\BullsAndCows\BullsAndCows\obj\Debug\BullsAndCows.pdb

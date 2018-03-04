@@ -95,15 +95,19 @@ namespace BullsAndCows
 				while ((tryParseBulls = int.TryParse(Console.ReadLine(), out bulls)) == false || bulls < 0 || bulls > 4)
 					Console.WriteLine(MessageCreator.MsgInvalidNumberCowsBullsRestraint);
 
-				Console.WriteLine(MessageCreator.MsgAskForCows);
+				if (bulls < 4)
+				{
+					Console.WriteLine(MessageCreator.MsgAskForCows);
 
-				while ((tryParseCows = int.TryParse(Console.ReadLine(), out cows)) == false || cows < 0 || cows > 4)
-					Console.WriteLine(MessageCreator.MsgInvalidNumberCowsBullsRestraint);
+					while ((tryParseCows = int.TryParse(Console.ReadLine(), out cows)) == false || cows < 0 || cows > 4)
+						Console.WriteLine(MessageCreator.MsgInvalidNumberCowsBullsRestraint);
 
-				opponentKeyNumber = ProcessResultAndReducePossibleOptionsForKeyNumberOfOpponent(myCurrMove, bulls, cows, optionsForKeyNumberOfTheOpponent);
-
-				if (myCurrMove == opponentKeyNumber)
+					opponentKeyNumber = ProcessResultAndReducePossibleOptionsForKeyNumberOfOpponent(myCurrMove, bulls, cows, optionsForKeyNumberOfTheOpponent);
+				}
+				else
+				{
 					Exit(MessageCreator.MsgComputerWins, MessageCreator.MsgExit);
+				}
 
 				Console.WriteLine("Please, enter a number");
 			}
@@ -186,8 +190,9 @@ namespace BullsAndCows
 
 		private void Exit(params string[] message)
 		{
-			Console.WriteLine(message);
-			var exit = Console.ReadLine();
+			foreach (var m in message)
+				Console.WriteLine(m);
+			var exit = Console.ReadKey();
 			Environment.Exit(1);
 		}
 	}

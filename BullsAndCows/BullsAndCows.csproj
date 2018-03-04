@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Engine.cs" />
     <Compile Include="MessageCreator.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Validator.cs" />
